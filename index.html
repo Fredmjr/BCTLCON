@@ -5,10 +5,15 @@
     <title>BCTLC Online Newsletter</title>
     <style>
         /* only 7 major sections here, the rest use tailwind to style */
+        @font-face {
+            font-family: Montserrat-Regular;
+            src: url(./fonts/Montserrat-Regular.otf);
+        }
         body{
             background-color: white;
             margin: 0px;
             font-size: 12px;
+            font-family: Montserrat-Regular;
             @media only screen and (max-width: 768px) {
                 font-size: 10px;
             }
@@ -17,7 +22,7 @@
         #NavUpper{
             padding-top: 15px;
             padding-bottom: 15px;
-            background-color: #254545;
+            background-color: #484556;
             padding-right: 100px;
             padding-left: 100px;
             color: white;
@@ -29,11 +34,12 @@
             @media only screen and (max-width: 768px) {
                 padding-right: 50px;
             padding-left: 50px;
+            font-size: 8px;
             }
         }
         #NavLower{
-            background-color: white;
-            border-bottom: 1px solid gray;
+            background-color: e5dfcf;
+            border-bottom: 1px solid #48455600;
             padding-top: 20px;
             padding-bottom: 20px;
             padding-right: 100px;
@@ -59,7 +65,7 @@
         }
         #newsletter{
             height: 700px;
-            background-color: #f1bf4b;
+            background-color: #e5dfcf;
             padding-top: 30px;
             padding-bottom: 30px;
             padding-right: 100px;
@@ -73,7 +79,7 @@
         }
         #motionFoat{
             height: 300px;
-            background-color: #e0f1eb;
+            background-color: #ed734e;
             padding-top: 30px;
             padding-bottom: 30px;
             padding-right: 100px;
@@ -86,7 +92,7 @@
         }
         #footer{
             height: 300px;
-            background-color: white;
+            background-color: #4d3f36;
             padding-top: 30px;
             padding-bottom: 30px;
             padding-right: 100px;
@@ -102,14 +108,20 @@
             align-items: center;
             justify-content: center;
             height: 20px;
-            background-color: #254545;
-            color: white;
+            background-color: #222222;
+            color: #ed734e;
             padding-top: 15px;
             padding-bottom: 15px;
             padding-right: 100px;
             padding-left: 100px;
             /* padding-right: 50px;
             padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+                padding-right: 50px;
+                padding-left: 50px;
+font-size: 9px;
+        }
+            
         }
     </style>
 </head>
