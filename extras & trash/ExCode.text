@@ -1,0 +1,45 @@
+search bar workable and generic
+        <span id="searchbar" style="display: flex; gap: 5px; align-items: center; border: 1px solid gray; border-radius: 3px; padding: 7px 10px;">
+            <img src="./icons/icons8-search-100.png" width="22" alt="" style="filter: opacity(40%);">
+            <!-- Searchbar below is generic -->
+            <div style="height: 20px; width: 1px; background-color: rgb(169, 168, 168);"></div>
+            <span style="background-color: rgba(255, 255, 255, 0); border: none; font-size: 10px; color: gray;">Search here...</span>
+            <!-- <input type="text" style="background-color: rgba(255, 255, 255, 0); border: none; font-size: 12px;" placeholder="Search here..."> -->
+            <div style="height: 20px; width: 1px; background-color: rgb(169, 168, 168);"></div>
+            <img src="./icons/icons8-filter-100.png" width="22" alt="" style="filter: opacity(40%);">
+        </span>
+
+
+................................card with paper floater...................................
+        <div class="card1" style="text-align: center; font-size: 9px; position: relative; margin-top: 15px;">
+                            
+                            <img src="./imgs/Paper-card-cut-brown.png" width="50" style="position: absolute; top:-7px; left: 25px; width: 120px; height: 70px; filter: brightness(0) invert(1);" alt="">
+                            <!-- <img src="./icons/mail-inbox-app.png" width="50" alt=""><br><br> -->
+                             <br><br><br><br><br><br>
+                            <span style="color: #ed734e; font-family: monumentextended-ultrabold; font-size: 15px; letter-spacing: 1px;">DAILY QUOTES</span><br>
+                            Motivational and thought-provoking inspiration.
+                        </div>
+
+............................2nd card slote....................................
+<div id="slot2">
+                        <br><br><br><br><br><br><br>
+                        <div class="card11">Card 11</div>
+                        <br><br><br>
+                        <div class="card12">Card 12</div>
+                        <br><br><br>
+                        <div class="card13">Card 13</div>
+                        <br><br><br>
+                        <div class="card14">Card 14</div>
+                        <br><br><br>
+                        <div class="card15">Card 15</div>
+                        <br><br><br>
+                        <div class="card16">Card 16</div>
+                        <br><br><br>
+                        <div class="card17">Card 17</div>
+                        <br><br><br>
+                        <div class="card18">Card 18</div>
+                        <br><br><br>
+                        <div class="card19">Card 19</div>
+                        <br><br><br>
+                        <div class="card20">Card 20</div>
+                    </div>
