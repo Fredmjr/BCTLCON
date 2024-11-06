@@ -43,3 +43,77 @@ search bar workable and generic
                         <br><br><br>
                         <div class="card20">Card 20</div>
                     </div>
+
+
+......................................newsletter sec..........................................
+       <div id="NewsletterContainer">
+            <div id="upperNewsletter">
+                <!-- <img id="paperCutLogo" src="./logos/Paper-card-cut-brown qith logo.png" alt=""> -->
+                <br>
+                <span id="BCTLCNewsletterTitle">Bibleculture TLC</span><br>
+                <div style="background-color: #222222; height: 1px;"></div><br>
+                <span style="font-family: monumentextended-ultrabold; font-size: 13px; color: #222222; letter-spacing: 1px;">November Newsletter</span><br>
+                <span>In this month's newsletter, discover inspiring stories, thoughtful reflections, and practical insights to nourish your spirit. As we journey together in faith, we're reminded that God's love and guidance are always available to us. Discover the transformative power of living with intention, alert of the enemy's devices and how time seasons and times work. Learn how to prioritize what truly matters, break free from distractions, and make every moment count for God's glory. We also will be focusing on maximizing the time we have and embracing God's guidance.</span><br><br>
+                <div style="background-color: #222222; height: 1px;"></div><br>
+            </div>
+            <div id="lowerNewsletter">
+                <div id="infoNewsletter">
+                    <span style="font-family: monumentextended-ultrabold; font-size: 30px; color: #222222;">BCTLC</span><br>
+                    <span style="font-family: monumentextended-ultrabold; font-size: 12px; color: #222222; letter-spacing: 1px;">November Newsletter</span><br><br><br> 
+                <span>Sat 24, November 2024</span><br><br>   
+                <span style="font-family: Montserrat-Bold;">"The Clock on The Wall"</span><br><br>  
+
+                As we continue to navigate the vast landscape of online media, we remain committed 
+                to spreading the Gospel and inspiring spiritual growth through our YouTube channel. 
+                We're grateful for your support and engagement!  As we continue to navigate the vast 
+                landscape of online media, we remain committed to spreading the Gospel and inspiring spiritual 
+                growth through our YouTube channel. We're grateful for your support and engagement! <br><br> 
+
+                <span style="font-family: Montserrat-Bold;">New Video Series: "God’s Eyes"</span><br><br> 
+
+                Join us as we delve into the Bible, exploring its rich teachings and applying them to our daily lives. 
+                New episodes released every Wednesday!<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Recent Video Highlights:</span><br><br> 
+
+                1. "Finding Peace in Chaos" - A calming message of hope amidst life's storms.<br> 
+                2. "The Power of Prayer" - Exploring the transformative power of communion with God.<br>
+                3. "Testimony Tuesday: Overcoming Anxiety" - A personal story of faith and triumph.<br><br>
+
+                <span style="font-family: Montserrat-Bold;">Upcoming Live Streams:</span><br><br> 
+
+                1. Q&A Session: October 15th, 7 PM EST - Ask our pastors your burning questions!<br> 
+                2. Worship Night: October 22nd, 8 PM EST - Join us for an evening of praise and worship.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Community Spotlight:</span><br><br> 
+
+                - Congratulations to our channel's 10,000th subscriber!<br> 
+                - Share your testimony or prayer requests: mailto:contact@thebeaconchannel.com<br> 
+                - Join our private Facebook group for discussion and community building.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Partner with Us:</span><br><br> 
+
+                Consider supporting our ministry through,<br> 
+                1. Prayer: Lift us up in your daily prayers.<br> 
+                2. Sharing: Spread the word about our channel.<br> 
+                3. Giving: https://thebeaconchannel.com/donate to help us continue producing quality content.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Stay Connected:</span><br><br> 
+
+                <span style="font-family: Montserrat-Bold;">YouTube:</span> @bibculturetlc<br> 
+                <span style="font-family: Montserrat-Bold;">Facebook:</span>@fredmjr<br> 
+                <span style="font-family: Montserrat-Bold;">Instagram:</span> @fred_mjr<br> 
+                <span style="font-family: Montserrat-Bold;">Website:</span> http//www.bibculturetlc.com<br><br> 
+
+                <span >May the LORD richly bless you all, and thank you for your support.</span><br><br> 
+                <span style="font-family: Montserrat-Bold;">Updated by: BCTLC Founder</span><br> 
+                <span style="font-size: 10px;">14:58 I Sat 02 November</span><br><br> 
+                </div>
+                <div id="imgNewsletter">
+                    <div id="imgNewsletterad1">img1</div>
+                    <br>
+                    <div id="imgNewsletterad2">img1</div>
+                </div>
+            </div>
+        </div>
+      
