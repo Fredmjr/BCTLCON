@@ -67,7 +67,11 @@
             padding-left: 30px;}
         }
         #header{
-            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            min-height: fit-content;
             background-color: white;
             padding-top: 30px;
             padding-bottom: 30px;
@@ -76,9 +80,73 @@
            /*  padding-right: 50px;
             padding-left: 50px; */
             @media only screen and (max-width: 768px) {
-                padding-right: 30px;
+            padding-right: 30px;
             padding-left: 30px;}
         }
+
+        #thumbnail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 550px;
+            @media only screen and (max-width: 1028px) {
+                width: 330px;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 340px;
+                display: flex;
+            }  
+        }
+        #thumbnailImg{
+            width: 400;
+            height: auto;
+            @media only screen and (max-width: 1024px) {
+                width: 320;
+                height: auto;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 320;
+                height: auto;
+            }
+        }
+        #intro{
+            text-align: center;
+            width: 550px;
+            @media only screen and (max-width: 1028px) {
+                width: 330px;
+                padding-bottom: 20px;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 340px;
+            } 
+        }
+        #bctlcTitle{
+            font-family: monumentextended-ultrabold; font-size: 70px;
+            color: #4d3f36;
+            @media only screen and (max-width: 768px) {
+                font-size: 30px;
+            } 
+        }
+        #bctlcSubtleTitle{
+            font-family: monumentextended-ultrabold; font-size: 20px;
+            color: #ed734e; letter-spacing: 1px;
+            @media only screen and (max-width: 1028px) {
+                font-size: 20px;
+        }
+            @media only screen and (max-width: 768px) {
+                font-size: 15px;
+            } 
+        }
+
+        #JoinBtn{
+            background-color: #f1bf4b;
+            width: 150px;
+            color: white;
+            height: 30px;
+            border-radius: 3px;
+            border: none;
+        }
+
         #newsletter{
             background-color: #f1bf4b;
             padding-top: 70px;
@@ -454,7 +522,24 @@
         </span>
         
     </div>
-    <div id="header">header</div>
+    <div id="header">
+        <div id="thumbnail">
+            <img id="thumbnailImg" src="./imgs/newsletter-header.png" alt="">
+        </div>
+        <div id="intro">
+            <br><br><br><br><br><br>
+            <span id="bctlcTitle">BCTLC</span><br>
+            <span id="bctlcSubtleTitle">ONLINE NEWSLETTER</span><br><br>
+            <span id="bctlcBrief">Stay informed, stay inspired with our curated content on faith, community, and personal growth. 
+                Every week, we'll bring you uplifting tales of hope and resilience from our community. 
+                Thought-provoking insights into the Bible's timeless wisdom. Updates on events, programs, 
+                and initiatives. Practical advice for nurturing your spirit, mind, and body
+                
+                Subscribe now and join our vibrant community of believers seeking to deepen their faith 
+                and make a positive impact.</span><br><br><br><br>
+                <button id="JoinBtn">Join us</button>
+        </div>
+    </div>
     <div id="newsletter">
         <div style=" background-color: #eddda6; width: 100%;">
         <br><br><br><br><br><br><br><br><br><br><br><br>
