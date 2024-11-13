@@ -1,0 +1,970 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCTLC Online Newsletter</title>
+    <style>
+        /* only 7 major sections here, the rest use tailwind to style */
+        @font-face {
+            font-family: Montserrat-ExtraBold;
+            src: url(./fonts/Montserrat-ExtraBold.otf);
+        }
+        @font-face {
+            font-family: monumentextended-ultrabold;
+            src: url(./fonts/monumentextended-ultrabold.otf);
+        }
+        @font-face {
+            font-family: Montserrat-Bold;
+            src: url(./fonts/Montserrat-Bold.otf);
+        }
+        @font-face {
+            font-family: Montserrat-Regular;
+            src: url(./fonts/Montserrat-Regular.otf);
+        }
+        body{
+            background-color: #222222;
+            margin: 0px;
+            font-size: 10px;
+            font-family: Montserrat-Regular;
+            @media only screen and (max-width: 768px) {
+                font-size: 10px;
+            }
+        }
+       
+        #NavUpper{
+            display: flex;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            background-color: #4d3f36;
+            padding-right: 100px;
+            padding-left: 100px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+                padding-right: 30px;
+            padding-left: 30px;
+            font-size: 8px;
+            }
+        }
+        #NavLower{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            border-bottom: 1px solid #48455600;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-right: 100px;
+            padding-left: 100px;
+            /* padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+                padding-right: 30px;
+            padding-left: 30px;}
+        }
+
+        #landingPage{
+            height: 500px; background-image: url(./imgs/bg-Fill-1.png); 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            @media only screen and (max-width: 768px) {
+                height: 200px;}
+        }
+        #header{
+            color: whit;
+            background-color: rgba(255, 255, 255, 0.467);
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            min-height: fit-content;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 100px;
+            padding-left: 100px;
+           /*  padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+            padding-right: 30px;
+            padding-left: 30px;}
+        }
+        #headerBG{
+            background-image: url(./imgs/Color-Fill-1.png);            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #subHeader{
+            background-image: url(./imgs/Color-Fill-1.png);            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #contsHeader{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        #headerDisplay{
+            background-color: #ffffff;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #newsLetterdisplay{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        #newsLetterdisplayImgEffect{
+            width: 630px;
+            border-radius: 3px;
+            @media only screen and (max-width: 1028px) {
+                width: 240px;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 290px;
+            } 
+        }
+
+        #newsLetterdisplayInfo{
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+            } 
+        }
+        #newsLetterFooter{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        #clicks{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 5px;
+        }
+
+
+        #thumbnail{
+            border-radius: 50%;
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400;
+            box-shadow:  0 0 10px #1b1b1b0f;
+            @media only screen and (max-width: 1028px) {
+                width: 330px;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 340px;
+                display: flex;
+            }  
+        }
+
+        #thumbnailImg{
+            width: 280;
+            height: auto;
+            @media only screen and (max-width: 1024px) {
+                width: 310;
+                height: auto;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 290;
+                height: auto;
+            }
+        }
+        #intro{
+            text-align: center;
+            width: 570px;
+            font-size: 12px;
+            @media only screen and (max-width: 1028px) {
+                width: 330px;
+                padding-bottom: 20px;
+            } 
+            @media only screen and (max-width: 768px) {
+                width: 340px;
+            } 
+        }
+        #bctlcTitle{
+            font-family: monumentextended-ultrabold; font-size: 70px;
+            color: #4d3f36;
+            @media only screen and (max-width: 768px) {
+                font-size: 30px;
+            } 
+        }
+        #bctlcSubtleTitle{
+            font-family: monumentextended-ultrabold; font-size: 20px;
+            color: #ed734e; letter-spacing: 1px;
+            @media only screen and (max-width: 1028px) {
+                font-size: 20px;
+        }
+            @media only screen and (max-width: 768px) {
+                font-size: 15px;
+            } 
+        }
+        #SignUpBtn{
+            background-color: #f1bf4b;
+            border: 2px #ed734e;
+            font-size: 11px;
+            width: 100px;
+            color: white;
+            font-family: Montserrat-ExtraBold;
+            height: 35px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        #JoinBtn{
+            background-color: #ed734e;
+            font-size: 11px;
+            width: 100px;
+            color: white;
+            font-family: Montserrat-ExtraBold;
+            height: 35px;
+            border-radius: 3px;
+            border: none;
+        }
+
+        #newsletter{
+            background-color: #f1bf4b;
+            font-size: 8px;
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-right: 100px;
+            padding-left: 100px;
+          /*   padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+            padding-right: 20px;
+            padding-left: 20px;}
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+         #NewsletterContainer{
+            background-color: #eddda6;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.486);
+            box-shadow:  0 0 10px #1b1b1b21;
+        
+        }
+
+        #upperNewsletter{
+           /*  position: relative; */
+            background-color: #f1bf4b00;
+            min-height: fit-content;
+            text-align: end;
+            align-items: end;
+            @media only screen and (max-width: 768px) {
+                text-align: center;}
+            }
+
+        #newsLetterHeader {
+            text-align: center;
+            @media only screen and (max-width: 768px) {
+                text-align: center;
+            }
+        }
+        #lowerNewsletter{
+            background-color: #f1bf4b00;
+            height: 600px;
+            display: flex;
+            min-height: fit-content;
+            justify-content: space-between;
+            gap: 20px; 
+            flex-wrap: wrap;
+            @media only screen and (max-width: 1024px) {
+                justify-content: center;
+        }
+        @media only screen and (max-width: 768px) {
+                text-align: center;
+        }
+        }
+       #infoNewsletter{
+        background-color: #f1bf4b;
+        padding: 20px;
+        width: 590px;
+         @media only screen and (max-width: 1024px) {
+             width: 500px;  
+             display: flex;
+        }
+       }
+
+       #imgNewsletter{
+        background-color: #f1bf4b00;
+        width: 610px;
+        @media only screen and (max-width: 1024px) {
+             width: 500px;
+        }
+       }
+       #imgNewsletterad1{
+        background-color: #ed734e;
+        height: 200px;
+       }
+       #imgNewsletterad2{
+        background-color: #ed734e;
+        height: 390px;
+       }
+       #paperCutLogo{
+        position: absolute;
+        width: 200px;
+        top: -40px;
+        left: 20px;
+         @media only screen and (max-width: 768px) {
+                left: 75px;
+                width: 110px;
+        }
+       }
+
+       #BCTLCNewsletterTitle{
+        font-family: montserrat-ExtraBold; 
+        letter-spacing: -2px;
+        font-size: 55px; 
+        color: #222222;
+        @media only screen and (max-width: 768px) {
+                font-size: 25px;
+                letter-spacing: -1px;
+        }
+       }
+
+        #motionFoat{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            min-height: fit-content;
+            background-color: #222222;
+            padding-right: 100px;
+            padding-left: 100px;
+           /*  padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 1024px) {
+                justify-content: center;
+        }
+            @media only screen and (max-width: 768px) {
+                padding-right: 50px;
+            padding-left: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        }
+        
+        #upperVanishingPoints{
+            background-color: #f1bf4b;
+            width: 700px; height: 8px; 
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;    
+            @media only screen and (max-width: 768px) {
+                width: 310px; height: 8px; 
+
+            }  
+        }
+        #lowerVanishingPoints{
+            background-color: #f1bf4b;
+            width: 700px; height: 8px; 
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px; 
+            @media only screen and (max-width: 768px) {
+                width: 310px; height: 8px; 
+            
+            }  
+        }
+
+        #foaterSideContainer{
+            display: flex; justify-content: center;
+            background-color: #2c2c2c9c;
+        }
+
+        .cardTitle{
+            color: #4d3f36; font-family: Montserrat-ExtraBold; font-size: 12px;
+        }
+        #foaterSide{
+            height: 300px;
+            display: flex; 
+            overflow: hidden;
+            gap: 50px;
+            @media only screen and (max-width: 768px) {
+                gap: 20px;
+        }
+        }
+
+        #infoSideCard{
+            background-color: #eddda6; 
+            padding: 30px;
+            width: 410; 
+            height: 210px; 
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 768px) {
+                display: flex;
+            justify-content: center;
+            align-items: center;
+                width: 300px;
+                font-size: 8px;  
+                margin-bottom: 10px; 
+                height: 260px; 
+        }
+        }
+        
+ 
+
+    .card1, .card2
+    {
+
+      width: 300px;
+      height: 150px;
+      background-color: #eddda6;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+      animation: move-up 70s infinite linear;
+      border-radius: 5px;
+      @media only screen and (max-width: 768px) {
+        width: 135px;
+        height: 160px;
+        }
+        }
+
+        @keyframes move-up {
+          0% {
+            transform: translateY(0%);
+          }
+          100% {
+            transform: translateY(-500%);
+          }
+          0% {
+            transform: translateY(0%);
+          }
+          100% {
+            transform: translateY(-500%);
+        }
+          }
+
+        #cardEffect{
+            width: 90px; 
+            height: 90px; 
+            background-color: #4d3f36;
+            position: absolute; top: -25px; left: 105px; border-radius: 50%; 
+            display: flex; justify-content: center; 
+            align-items: center;
+                @media only screen and (max-width: 768px) {
+               left: 27px;
+               width: 80px; 
+            height: 80px; 
+        }
+        }
+
+
+        #footer{
+            min-height: fit-content;
+            background-color: #4d3f36;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 100px;
+            padding-left: 100px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 1024px) {
+                justify-content: center;
+        }
+            @media only screen and (max-width: 768px) {
+            padding-right: 50px;
+            padding-left: 50px;
+            justify-content: center;}
+        }
+        
+
+        #footerInfo{
+            width: 800px;
+            background-color: #eddda6; 
+            height: fit-content; padding: 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            border-radius: 3px; 
+            flex-wrap: wrap;
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                justify-content: center; 
+            }
+        }
+            #floaterwhatsnew{
+                display: flex; 
+                align-items: center; 
+                flex-wrap: wrap; 
+                background-color: #eddca600; 
+                width: 410px; 
+                line-height: 15px;
+            @media only screen and (max-width: 768px) {
+                width: 315px;
+                text-align: center; 
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+
+        
+        #getStarted{
+            width: 200px; 
+            min-height: fit-content; 
+            background-color: #ed734e00; 
+            line-height: 18px;
+            @media only screen and (max-width: 768px) {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        #help{
+            width: 200px; 
+            min-height: fit-content; 
+            background-color: #ed734e00; 
+            line-height: 18px;
+            @media only screen and (max-width: 768px) {
+                display: flex;
+            text-align: center;
+            justify-content: center;
+            }
+        }
+
+        #footerSocialCard{
+            width: 350px; height: 170px; 
+            background-color: #eddda6; 
+            border-radius: 3px; 
+            padding: 30px;
+            @media only screen and (max-width: 768px) {
+                width: 235px;
+                text-align: center;
+            }
+        }
+
+        .handleCard{
+            background-color: #4d3f36; 
+            width: 125px; 
+            height: 40px; 
+            border-radius: 3px; display: flex; align-items: center; 
+            color: #ed734e; font-family: Montserrat-Bold; 
+            font-size: 15px; padding:  0 10px; 
+            gap: 10px;
+             @media only screen and (max-width: 768px) {
+                width: 95px; 
+                height: 40px; 
+                font-size: 12px;
+            }
+        }
+
+
+
+        #endNote{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            background-color: #222222;
+            color: #ed734e;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right: 100px;
+            padding-left: 100px;
+            /* padding-right: 50px;
+            padding-left: 50px; */
+            @media only screen and (max-width: 768px) {
+                padding-right: 50px;
+                padding-left: 50px;
+            font-size: 9px;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="NavUpper">
+        <span>BCTLC Online Newsletter</span>
+        <span style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+            <img src="./icons/email (3).png" width="18" alt="" style="filter: opacity(40%); filter: brightness(0) invert(1);">
+            
+            biblecultureTLC@gmail.com</span></div>
+    <div id="NavLower">
+        <img src="./logos/bctlc-Online-Newsletter.png" width="80" alt="">
+
+        <span style="display: flex; gap: 20px;">
+        <span style="text-align: center;">
+            <img src="./icons/icons8-notification-500.png" width="22" alt="user">
+            <br>
+            <span style="color: #ed734e; font-size: 10px;">Inbox</span>
+        </span>
+        <span style="text-align: center;">
+            <img src="./icons/user.png" width="20" height="19" alt="user">
+            <br>
+            <span style="color: #ed734e; font-size: 10px;">Accounts</span>
+        </span>
+        <span style="filter: opacity(80%); display: flex; align-items: center;"><img src="./icons/icons8-menu-512.png" width="27"  alt=""></span>
+        </span>
+        
+    </div>
+ 
+    <div id="landingPage">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <div id="newsletter">
+        <div id="NewsletterContainer" style="background-color: #eddda6; width: 100%;">
+        <div style="padding: 20px;">
+            <div id="newsLetterHeader">
+                <br>
+                <span style="font-family: monumentextended-ultrabold; font-size: 10px; color: #222222; letter-spacing: 1px; color: #ed734e;">ONLINE NEWSLETTER</span><br>
+                <span id="BCTLCNewsletterTitle">BIBLECULTURE TLC</span><br><br>
+                <span style="font-family: monumentextended-ultrabold; font-size: 11px; color: #222222; letter-spacing: 1px;">November Newsletter</span><br><br>
+                <div style="padding: 0 30px;">
+                    <span>In this month's newsletter, discover inspiring stories, thoughtful reflections, and practical insights to nourish your spirit. As we journey together in faith, we're reminded that God's love and guidance are always available to us. Discover the transformative power of living with intention, alert of the enemy's devices and how time seasons and times work. Learn how to prioritize what truly matters, break free from distractions, and make every moment count for God's glory. We also will be focusing on maximizing the time we have and embracing God's guidance.</span><br><br>
+                
+                </div>
+                <div style="width: 100%; height: 0.7px; background-color: #4d3f36;"></div>
+            </div>
+            <br>
+            <div id="newsLetterdisplay">
+                <div>
+                    <img id="newsLetterdisplayImgEffect" src="./imgs/The Clock on The Wall - Youtube Template.png" alt="The clock on the Wall">
+                </div>                
+                <div id="newsLetterdisplayInfo" style="background-color: #f1bf4b; height: 315px; width: 590px; border-radius: 3px; padding: 20px;">
+                    <span>Sat 24, November 2024</span><br><br>   
+                    <span style="font-family: Montserrat-Bold;">"The Clock on The Wall"</span><br><br>  
+                    As we continue to navigate the vast landscape of online media, we remain committed 
+                    to spreading the Gospel and inspiring spiritual growth through our YouTube channel. 
+                    We're grateful for your support and engagement!  As we continue to navigate the vast 
+                    landscape of online media, we remain committed to spreading the Gospel and inspiring spiritual 
+                    growth through our YouTube channel. We're grateful for your support and engagement! <br><br> 
+                    
+                    <a href="https://youtu.be/bGykV1c0Jj4" style="text-decoration: none;">
+                        <br><br><button style="border-radius: 3px; border: none; color: white; background-color: #3d0a0f; width: 130px; height: 30px; font-family: Montserrat-regular; font-size: 10px;">Learn more</button>
+                    </a></div>
+            </div>
+            <br>
+            <div style="width: 100%; height: 0.7px; background-color: #4d3f36;"></div><br>
+            <div id="newsLetterFooter">
+                <div id="newsLetterdisplayImg" style="background-color: #4d3f3600; min-height: fit-content; width: 630px;">
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">New Video Series: "God’s Eyes"</span><br><br> 
+
+                    Join us as we delve into the Bible, exploring its rich teachings and applying them to our daily lives. 
+                    New episodes released every Wednesday!<br><br> 
+    
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">Recent Video Highlights:</span><br><br> 
+    
+                    1. "Finding Peace in Chaos" - A calming message of hope amidst life's storms.<br> 
+                    2. "The Power of Prayer" - Exploring the transformative power of communion with God.<br>
+                    3. "Testimony Tuesday: Overcoming Anxiety" - A personal story of faith and triumph.<br><br>
+    
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">Upcoming Live Streams:</span><br><br> 
+    
+                    1. Q&A Session: October 15th, 7 PM EST - Ask our pastors your burning questions!<br> 
+                    2. Worship Night: October 22nd, 8 PM EST - Join us for an evening of praise and worship.<br><br> 
+    
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">Community Spotlight:</span><br><br> 
+    
+                    - Congratulations to our channel's 10,000th subscriber!<br> 
+                    - Share your testimony or prayer requests: mailto:contact@thebeaconchannel.com<br> 
+                    - Join our private Facebook group for discussion and community building.<br><br> 
+                    
+    
+                </div>
+                
+                <div style="background-color: #ed734e00; min-height: fit-content; width: 630;">
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">Partner with Us:</span><br><br> 
+
+                    Consider supporting our ministry through,<br> 
+                    1. Prayer: Lift us up in your daily prayers.<br> 
+                    2. Sharing: Spread the word about our channel.<br> 
+                    3. Giving: https://thebeaconchannel.com/donate to help us continue producing quality content.<br><br> 
+    
+                    <span style="font-family: Montserrat-Bold; font-size: 10px;">Stay Connected:</span><br><br> 
+    
+                    <span style="font-family: Montserrat-Bold;">YouTube:</span> @bibculturetlc<br> 
+                    <span style="font-family: Montserrat-Bold;">Facebook:</span>@fredmjr<br> 
+                    <span style="font-family: Montserrat-Bold;">Instagram:</span> @fred_mjr<br> 
+                    <span style="font-family: Montserrat-Bold;">Website:</span> http//www.bibculturetlc.com<br><br> 
+    
+                    <span >May the LORD richly bless you all, and thank you for your support.</span><br><br>  
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+                <span style="font-family: Montserrat-Bold;">Updated by: BCTLC Founder</span><br> 
+                    <span style="font-size: 10px;">14:58 I Sat 02 November</span><br><br>
+            </div>
+        </div>
+        <br><br>
+        </div>
+    </div>
+    
+    <div id="motionFoat"> 
+        <div>
+            <br><br>
+        <div id="upperVanishingPoints"><br><br></div>
+        <div id="foaterSideContainer">
+                   <div id="foaterSide">
+                    <div id="slot1">
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/icons8-video-100.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">VIDEOS</span><br>
+                            Discover the bible through  our library full of videos.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/videos.png" width="40" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">SERIES</span><br>
+                            Follow & watch a playlist of complete epsodes.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/movie-reel.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">SHORT VIDEOS</span><br>
+                            Browse and watch short videos.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/quotes.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">DAILY QUOTES</span><br>
+                            Motivational and thought-provoking inspiration.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/resources.png" width="45" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">BIBLE RESOURCES</span><br>
+                            Bible study guides and scriptures to help faith grow.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/group.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">COMMUNITY TESTIMONIES</span><br>
+                            Real-life stories of faith and transformation.
+                        </div>
+                    </div>
+                    <div id="slot2">
+                        <br><br><br><br><br><br><br>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/quotes.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">DAILY QUOTES</span><br>
+                            Motivational and thought-provoking inspiration.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/group.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">COMMUNITY TESTIMONIES</span><br>
+                            Real-life stories of faith and transformation.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/resources.png" width="45" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">BIBLE RESOURCES</span><br>
+                            Bible study guides and scriptures to help faith grow.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/quotes.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">DAILY QUOTES</span><br>
+                            Motivational and thought-provoking inspiration.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/movie-reel.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">SHORT VIDEOS</span><br>
+                            Browse and watch short videos.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/videos.png" width="40" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">SERIES</span><br>
+                            Follow & watch a playlist of complete epsodes.
+                        </div>
+                        <div class="card1" style="text-align: center; font-size: 9px; margin-top: 35px;">
+                            <div id="cardEffect">
+                                <div style="border: 4px solid #eddda6; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;"> 
+                                    <img src="./icons/icons8-video-100.png" width="35" alt="" style="filter: brightness(0) invert(1);">
+                                </div>
+                            </div>
+                            <br><br><br><br><br><br>
+                            <span class="cardTitle">VIDEOS</span><br>
+                            Discover the bible through  our library full of videos.
+                        </div>
+                    </div>
+        
+                </div>  
+        </div>
+        <div id="lowerVanishingPoints"><br><br></div>
+        <br><br>
+        </div>
+        
+        <div id="floaterwhatsnew">
+            <div id="infoSideCard">
+                <span style="font-size: 9px;">
+                    <span style="font-size: 8px; font-family: monumentextended-ultrabold; color: #ed734e; letter-spacing: 1px;">DISCOVER OUR LASTEST FEATURES</span><br>
+                    <span style="font-size: 25px; font-family: monumentextended-ultrabold;  line-height: 25px; color: #4d3f36;">WHAT'S NEW?</span><br>
+                    <span style="font-style: italic; line-height: 25px;">Explore biblical themes, tops & more:</span><br>
+                    <span style="font-family: Montserrat-Bold;">Inspiring Videos:</span> Uplifting messages from renowned speakers.<br>
+                    <span style="font-family: Montserrat-Bold;">Series:</span> Complete video epsodes avaliable to watch anytime.<br>
+                    <span style="font-family: Montserrat-Bold;">Short Videos:</span> Bite-sized videos for quick encouragement.<br>
+                    <span style="font-family: Montserrat-Bold;">Daily Quotes:</span> Motivational and thought-provoking inspiration.<br>
+                    <span style="font-family: Montserrat-Bold;">Bible Study Resources:</span> Interactive study guides and scripture insights.<br>
+                    <span style="font-family: Montserrat-Bold;">Community Testimonies:</span> Real-life stories of faith and transformation.<br><br>
+                    <span style="font-style: italic; font-size: 8px;">All features are avaliable on our parent BCTLC website.</span>
+                  </span>
+            </div>
+          </span>
+        </div> 
+    </div>
+    <div id="footer">
+        <div id="footerInfo">
+            <div id="getStarted" style="display: flex; align-items: center;">
+                <span>
+                  <span style="font-size: 14px; font-family: Montserrat-Bold;">Get started!</span><br>
+                Series <br>
+                Videos<br>
+                Short Takes<br>
+                Daily Quotes<br>
+                Bible Study Resources<br>
+                Community Testimonies 
+                <br><br>
+                </span>
+                </span>
+            </div>
+            <div id="help" style="display: flex; align-items: center;">
+                <span>
+                   <span style="font-size: 14px; font-family: Montserrat-Bold;">Help & Assistance</span><br>
+                Q&A <br>
+                About us  
+                <br><br>
+                </span>
+                </span>
+            </div>
+            <div style="width: 200px; min-height: fit-content; background-color: #ed734e00; display: flex; align-items: center; justify-content: center;">
+                <span style="text-align: center;">
+                    <img src="./icons/call-icon.png" width="45" alt="user">
+                    <br><br>
+                    <span style="color: #ed734e; font-size: 10px; font-family: Montserrat-Bold;">Contacts</span><br>
+                    <span style="color: #1b1b1b; font-size: 10px;">Call using lines below</span><br>
+                    <span style="color: #1b1b1b; font-size: 10px;">+260 760932304/+260 975986004</span>
+                </span>
+            </div>
+            <div style="width: 200px; height: 170px; background-color: #ed734e00; display: flex; align-items: center; justify-content: center;">
+                <span style="text-align: center;">
+                    <img src="./icons/email (3).png" width="50" alt="user">
+                    <br><br>
+                    <span style="color: #ed734e; font-size: 12px; font-family: Montserrat-Bold;">Email</span><br>
+                    <span style="color: #1b1b1b; font-size: 10px;">
+                        Connect with us <br>
+                        <span>@</span>biblecultureTLC@gmail.com
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="footerSocialCard">
+            <img src=".//logos/bctlc-Online-Newsletter.png" width="120" alt="">
+            <p>Stay connected with our social links below.</p>
+            <div style="background-color: #ed734e00; width: 300px; height: 100px; display: flex; flex-wrap: wrap; gap: 7px;">
+                <a href="https://www.facebook.com/share/1E54TZ5cx3oE9F58/?mibextid=qi2Omg" style="text-decoration: none;">
+                    <div class="handleCard">
+                    <img src="./icons/facebook.png" width="25" alt="facebook">
+                    Facebook
+                </div>
+                </a>
+                
+                <a href="https://youtube.com/playlist?list=PLswh4Rt-GXgJsRDir76ddw47m_GHbJrgn&si=bEl9TTcClOrjmirS" style="text-decoration: none;">
+                 <div class="handleCard">
+                    <img src="./icons/youtube.png" width="25" alt="Youtbe">
+                    Youtube
+                </div>   
+                </a>
+                
+                <a href="https://www.instagram.com/fred_mjr37?igsh=OGQ5ZDc2ODk2ZA==" style="text-decoration: none;">
+                <div class="handleCard">
+                    <img src="./icons/instagram.png" width="25" alt="facebook">
+                    Instagram
+                </div>    
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    <div id="endNote">@BiblecultureTLC, All rights reserved.</div>
+</body>
+</html>

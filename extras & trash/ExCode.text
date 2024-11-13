@@ -1,0 +1,214 @@
+search bar workable and generic
+        <span id="searchbar" style="display: flex; gap: 5px; align-items: center; border: 1px solid gray; border-radius: 3px; padding: 7px 10px;">
+            <img src="./icons/icons8-search-100.png" width="22" alt="" style="filter: opacity(40%);">
+            <!-- Searchbar below is generic -->
+            <div style="height: 20px; width: 1px; background-color: rgb(169, 168, 168);"></div>
+            <span style="background-color: rgba(255, 255, 255, 0); border: none; font-size: 10px; color: gray;">Search here...</span>
+            <!-- <input type="text" style="background-color: rgba(255, 255, 255, 0); border: none; font-size: 12px;" placeholder="Search here..."> -->
+            <div style="height: 20px; width: 1px; background-color: rgb(169, 168, 168);"></div>
+            <img src="./icons/icons8-filter-100.png" width="22" alt="" style="filter: opacity(40%);">
+        </span>
+
+
+................................card with paper floater...................................
+        <div class="card1" style="text-align: center; font-size: 9px; position: relative; margin-top: 15px;">
+                            
+                            <img src="./imgs/Paper-card-cut-brown.png" width="50" style="position: absolute; top:-7px; left: 25px; width: 120px; height: 70px; filter: brightness(0) invert(1);" alt="">
+                            <!-- <img src="./icons/mail-inbox-app.png" width="50" alt=""><br><br> -->
+                             <br><br><br><br><br><br>
+                            <span style="color: #ed734e; font-family: monumentextended-ultrabold; font-size: 15px; letter-spacing: 1px;">DAILY QUOTES</span><br>
+                            Motivational and thought-provoking inspiration.
+                        </div>
+
+............................2nd card slote....................................
+<div id="slot2">
+                        <br><br><br><br><br><br><br>
+                        <div class="card11">Card 11</div>
+                        <br><br><br>
+                        <div class="card12">Card 12</div>
+                        <br><br><br>
+                        <div class="card13">Card 13</div>
+                        <br><br><br>
+                        <div class="card14">Card 14</div>
+                        <br><br><br>
+                        <div class="card15">Card 15</div>
+                        <br><br><br>
+                        <div class="card16">Card 16</div>
+                        <br><br><br>
+                        <div class="card17">Card 17</div>
+                        <br><br><br>
+                        <div class="card18">Card 18</div>
+                        <br><br><br>
+                        <div class="card19">Card 19</div>
+                        <br><br><br>
+                        <div class="card20">Card 20</div>
+                    </div>
+
+
+......................................newsletter sec..........................................
+       <div id="NewsletterContainer">
+            <div id="upperNewsletter">
+                <!-- <img id="paperCutLogo" src="./logos/Paper-card-cut-brown qith logo.png" alt=""> -->
+                <br>
+                <span id="BCTLCNewsletterTitle">Bibleculture TLC</span><br>
+                <div style="background-color: #222222; height: 1px;"></div><br>
+                <span style="font-family: monumentextended-ultrabold; font-size: 13px; color: #222222; letter-spacing: 1px;">November Newsletter</span><br>
+                <span>In this month's newsletter, discover inspiring stories, thoughtful reflections, and practical insights to nourish your spirit. As we journey together in faith, we're reminded that God's love and guidance are always available to us. Discover the transformative power of living with intention, alert of the enemy's devices and how time seasons and times work. Learn how to prioritize what truly matters, break free from distractions, and make every moment count for God's glory. We also will be focusing on maximizing the time we have and embracing God's guidance.</span><br><br>
+                <div style="background-color: #222222; height: 1px;"></div><br>
+            </div>
+            <div id="lowerNewsletter">
+                <div id="infoNewsletter">
+                    <span style="font-family: monumentextended-ultrabold; font-size: 30px; color: #222222;">BCTLC</span><br>
+                    <span style="font-family: monumentextended-ultrabold; font-size: 12px; color: #222222; letter-spacing: 1px;">November Newsletter</span><br><br><br> 
+                <span>Sat 24, November 2024</span><br><br>   
+                <span style="font-family: Montserrat-Bold;">"The Clock on The Wall"</span><br><br>  
+
+                As we continue to navigate the vast landscape of online media, we remain committed 
+                to spreading the Gospel and inspiring spiritual growth through our YouTube channel. 
+                We're grateful for your support and engagement!  As we continue to navigate the vast 
+                landscape of online media, we remain committed to spreading the Gospel and inspiring spiritual 
+                growth through our YouTube channel. We're grateful for your support and engagement! <br><br> 
+
+                <span style="font-family: Montserrat-Bold;">New Video Series: "God’s Eyes"</span><br><br> 
+
+                Join us as we delve into the Bible, exploring its rich teachings and applying them to our daily lives. 
+                New episodes released every Wednesday!<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Recent Video Highlights:</span><br><br> 
+
+                1. "Finding Peace in Chaos" - A calming message of hope amidst life's storms.<br> 
+                2. "The Power of Prayer" - Exploring the transformative power of communion with God.<br>
+                3. "Testimony Tuesday: Overcoming Anxiety" - A personal story of faith and triumph.<br><br>
+
+                <span style="font-family: Montserrat-Bold;">Upcoming Live Streams:</span><br><br> 
+
+                1. Q&A Session: October 15th, 7 PM EST - Ask our pastors your burning questions!<br> 
+                2. Worship Night: October 22nd, 8 PM EST - Join us for an evening of praise and worship.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Community Spotlight:</span><br><br> 
+
+                - Congratulations to our channel's 10,000th subscriber!<br> 
+                - Share your testimony or prayer requests: mailto:contact@thebeaconchannel.com<br> 
+                - Join our private Facebook group for discussion and community building.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Partner with Us:</span><br><br> 
+
+                Consider supporting our ministry through,<br> 
+                1. Prayer: Lift us up in your daily prayers.<br> 
+                2. Sharing: Spread the word about our channel.<br> 
+                3. Giving: https://thebeaconchannel.com/donate to help us continue producing quality content.<br><br> 
+
+                <span style="font-family: Montserrat-Bold;">Stay Connected:</span><br><br> 
+
+                <span style="font-family: Montserrat-Bold;">YouTube:</span> @bibculturetlc<br> 
+                <span style="font-family: Montserrat-Bold;">Facebook:</span>@fredmjr<br> 
+                <span style="font-family: Montserrat-Bold;">Instagram:</span> @fred_mjr<br> 
+                <span style="font-family: Montserrat-Bold;">Website:</span> http//www.bibculturetlc.com<br><br> 
+
+                <span >May the LORD richly bless you all, and thank you for your support.</span><br><br> 
+                <span style="font-family: Montserrat-Bold;">Updated by: BCTLC Founder</span><br> 
+                <span style="font-size: 10px;">14:58 I Sat 02 November</span><br><br> 
+                </div>
+                <div id="imgNewsletter">
+                    <div id="imgNewsletterad1">img1</div>
+                    <br>
+                    <div id="imgNewsletterad2">img1</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        ..............................................22nd final header ......................................
+           <div id="headerBG">
+        <div id="header">
+            <div id="subHeader">
+                <div id="contsHeader">
+                    <div id="headerDisplay">
+                        <img src="./imgs/globe.png" width="100" alt="">
+                    </div>
+                    <div id="headerInfoDisplay">
+                        <span>ereggrtgg</span><br>
+                        <span>dwedwe</span><br>
+                        <span>feergergetget</span><br>
+                        <br><br>
+                        <span id="heeaderCatelogy">
+                            <span>
+                                <span>dwde</span><br>
+                                <span>sqdqwd2e2e2e</span>
+                            </span>
+                            <span>
+                                <span>dwde</span><br>
+                                <span>sqdqwd2e2e2e</span>
+                            </span>
+                            <span>
+                                <span>dwde</span><br>
+                                <span>sqdqwd2e2e2e</span>
+                            </span>
+                        </span>
+                        
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div id="clicks">
+                    <button id="joinBtn">Join us</button>
+                    <div style="width: 1px; height: 25px; background-color: #4d3f36;"></div>
+                    <button id="SignUpBtn">Sign up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ....................Section below is for another header idea................ -->
+        <!-- div id="header">
+            <div id="thumbnail">
+
+               <img id="thumbnailImg" src="./imgs/globe.png" alt="">     
+            </div>
+            <div id="intro">
+                <br><br><br><br><br><br>
+                <span id="bctlcTitle">BCTLC</span><br>
+                <span id="bctlcSubtleTitle">ONLINE NEWSLETTER</span><br><br>
+                <span id="bctlcBrief">Stay informed, stay inspired with our curated content on <span style=" font-family: Montserrat-ExtraBold;">faith, community, and personal growth. </span> faith, community, and personal growth. 
+                    Every week, we'll bring you uplifting tales of hope and resilience from our community. 
+                    Thought-provoking insights into the Bible's timeless wisdom. <span style=" font-family: Montserrat-ExtraBold;">Updates on events, programs, </span>
+                    and initiatives. Practical advice for nurturing your spirit, mind, and body
+                    <br><br>
+                    <span style=" font-family: Montserrat-ExtraBold;">Subscribe now</span> and join our vibrant community of believers seeking to deepen their faith 
+                    and make a positive impact.</span><br><br><br><br>
+                    <button id="JoinBtn">Join us</button><br><br>
+            </div> -->
+<!-- ....................end................ -->
+
+            
+        </div>
+    </div>
+
+
+
+
+........................................landing header................................................
+<div id="landing" style="background-color: #eddda6; height: 270px;">
+        <div style="padding-left: 50px; padding-right: 50px; height: 150px; background-image: url(./imgs/bg-Fill-1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+            <br><br><br>
+        </div>
+        <div style="padding-left: 50px; padding-right: 50px;height: 100px; position: relative;">
+            <div style="position: absolute; top: -80px; background-color: #ffffff; width: 150px; height: 150px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow:  0 0 10px  #1b1b1b2c;">
+                <div style="width: 130px; height: 130px; display: flex; align-items: center; justify-content: center; border: 4px solid #ed734e; border-radius: 50%;"><img src="./logos/bctlc-noraml-logo.png" width="80px" alt=""></div>
+                </div>
+            <div style=" display: flex; justify-content: end; padding-top: 20px; gap: 20px;"><div>
+                xxkxhixqwipj <br>
+                ihccqhiqiqqh <br>
+                qhoiwyodyyyyyyyyyyyjdqdq <br>
+                jxbHUUIou9wwu <br>
+            </div>
+            <div id="clicks">
+                <button id="joinBtn">Join us</button>
+                <div style="width: 1px; height: 25px; background-color: #4d3f36;"></div>
+                <button id="SignUpBtn">Sign up</button>
+            </div></div>
+        </div>
+    </div>
+
+
+      
